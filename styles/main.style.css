@@ -1,0 +1,38 @@
+@import "todo-list-styles.css";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    max-width: fit-content;
+    margin: auto auto;
+    background-color: #6497b1;
+}
+h1 {
+    color: rgba(0, 0, 0, 0.8)
+}
+main .card {
+    border-style: none;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 20px;
+    min-width: fit-content;
+    background-color: #b3cde0;
+}
+button {
+    border-radius: 7px;
+    padding: 5px;
+    border-style: none;
+}
+input {
+    border-radius: 7px;
+    border-style: none;
+    padding: 5px;
+    margin-block: 2px;
+
+}
+i:hover, input.todo-checkbox, button{
+    cursor: pointer;
+}
+.warning{
+    color: #DAA520
+}

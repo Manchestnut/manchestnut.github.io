@@ -1,0 +1,25 @@
+main #todo-form {
+    margin-bottom: 20px;
+}
+main #list li{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color: white;
+    margin-block: 5px;
+    padding: 2px;
+    border-radius: 5px;
+}
+main #list li .todo-checkbox{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    outline: none;
+    cursor: pointer;
+}
+main #list .delete-button {
+    margin-inline: 5px;
+}
