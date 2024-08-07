@@ -6,7 +6,7 @@ const weatherIcon = document.getElementById('weather-icon');
 async function weatherAPI() {
     const city = location.value;
     const apiKey = '778d16a4badc48ffa9310409240708';
-    const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
     
     try {
         const response = await fetch(apiUrl);
