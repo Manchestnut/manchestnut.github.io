@@ -5,6 +5,7 @@ import clockMain from './modules/clock.js'
 import reverseStringMain from './modules/reverse-string.js'
 import countdownMain from './modules/countdown.js'
 import passwordGeneratorMain from './modules/password-generator.js'
+import weatherMain from './modules/weather.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   todoMain()
@@ -20,4 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
   countdownMain()
 
   passwordGeneratorMain()
+
+  weatherMain()
 })
