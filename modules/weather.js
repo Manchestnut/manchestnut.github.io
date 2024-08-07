@@ -2,6 +2,7 @@ const location = document.getElementById('input-location');
 const button = document.getElementById('weather-button');
 const weatherDisplay = document.getElementById('weather-display');
 const weatherIcon = document.getElementById('weather-icon');
+const locationDisplay = document.getElementById('location');
 
 async function weatherAPI() {
     const city = location.value;
@@ -14,6 +15,7 @@ async function weatherAPI() {
             throw new Error(response.status);
         }
         const data = await response.json()
+        locationDisplay.innerHTML = `${data.location.country}, ${data.location.region}`
         weatherDisplay.innerHTML = `${data.current.heatindex_c} °C
                                    ${data.current.condition.text} `
                                    
