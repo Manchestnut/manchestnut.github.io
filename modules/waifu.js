@@ -37,14 +37,26 @@ async function getWaifu() {
       }
       const requestUrl = `${apiUrl}?${queryParams.toString()}`;
 
+      waifuDisplay.innerHTML = "<p>Loading...</p>";
+      source.innerHTML = "";
+
       try {
         const response = await fetch(requestUrl);
         if(!response.ok) {
             throw new Error(response.status);
         }
         const data = await response.json();
-        waifuDisplay.innerHTML = `<img id='waifu-image' src=${data.images[0].url}>`
-        source.innerHTML = `<a href=${data.images[0].source} target='_blank' rel='noreferrer noopener'>Source</a>`
+
+        const img = document.createElement('img');
+        img.id = 'waifu-image';
+        img.src = data.images[0].url;
+        img.alt = 'waifu'
+
+        img.onload = () => {
+            waifuDisplay.innerHTML = ''
+            waifuDisplay.appendChild(img)
+            source.innerHTML = `<a href=${data.images[0].source} target='_blank' rel='noreferrer noopener'>Source</a>`
+        }
       }
       catch(error) {
         console.error(error)
