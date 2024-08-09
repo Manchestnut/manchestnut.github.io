@@ -5,7 +5,7 @@ function hideShow(event) {
     
     if (hideShowButton.classList.contains('hide-show')) {
         const parentCard = hideShowButton.closest('.card');
-        const title = parentCard.querySelector('h2').innerText
+        const title = parentCard.querySelector('h2').innerText;
         const cardContent = parentCard.querySelector('.content');
 
         const computedStyle = getComputedStyle(cardContent)
