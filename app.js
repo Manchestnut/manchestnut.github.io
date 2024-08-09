@@ -7,6 +7,7 @@ import countdownMain from './modules/countdown.js'
 import passwordGeneratorMain from './modules/password-generator.js'
 import weatherMain from './modules/weather.js'
 import getWaifuMain from './modules/waifu.js'
+import hideShowMain from './modules/hide-show.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   todoMain()
@@ -26,4 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
   weatherMain()
 
   getWaifuMain()
+
+  hideShowMain()
 })

@@ -37,7 +37,7 @@ async function getWaifu() {
       }
       const requestUrl = `${apiUrl}?${queryParams.toString()}`;
 
-      waifuDisplay.innerHTML = "<p>Loading...</p>";
+      waifuDisplay.innerHTML = "<p>Loading...</p>";// Loading message
       source.innerHTML = "";
 
       try {
@@ -52,8 +52,8 @@ async function getWaifu() {
         img.src = data.images[0].url;
         img.alt = 'waifu'
 
-        img.onload = () => {
-            waifuDisplay.innerHTML = ''
+        img.onload = () => { // wait for image to load
+            waifuDisplay.innerHTML = ''// remove loading message
             waifuDisplay.appendChild(img)
             source.innerHTML = `<a href=${data.images[0].source} target='_blank' rel='noreferrer noopener'>Source</a>`
         }

@@ -4,66 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Widgets</title>
 </head>
 <body>
     <main>
         <div class="card todo-list">
-            <h1>To-do List</h1>
-            <form id="todo-form">
-                <input type="text" id="todo-input" placeholder="Add to do" required>
-                <button type="submit">Add</button>
-            </form>      
-            <div id="list"></div>
+            <span class="hide-show">To-do List</span>
+            <div id="todo-content" class="content">
+                <h2>To-do List</h2>
+                <form id="todo-form">
+                    <input type="text" id="todo-input" placeholder="Add to do" required>
+                    <button type="submit">Add</button>
+                </form>      
+            <div id="list"></div> 
+        </div>
+
         </div>
         <div class="card" id="random-color">
-            <h1>Random Color</h1>
-            <p id="color-display">&nbsp;</p>
-            <button id="random-color-button" type="button">Click</button>
+            <span class="hide-show">Random Color</span>
+            <div id="random-color-content" class="content">
+                <h2>Random Color</h2>
+                <p id="color-display">&nbsp;</p>
+                <button id="random-color-button" type="button">Click</button>
+            </div>
         </div>
         <div class="card" id="random-number">
-            <h1>Random Number</h1>
-            <input id="min-number" type="number" placeholder="Min" value="1">
-            <input id="max-number" type="number" placeholder="Max" value="100">
-            <p id="number-display">&nbsp;</p>
-            <button id="random-number-button" type="button">Click</button>
+            <span class="hide-show">Random Number</span>
+            <div id="random-number-content" class="content">
+                <h2>Random Number</h2>
+                <input id="min-number" type="number" placeholder="Min" value="1"><br>
+                <input id="max-number" type="number" placeholder="Max" value="100">
+                <p id="number-display">&nbsp;</p>
+                <button id="random-number-button" type="button">Click</button>
+            </div>
         </div>
         <div class="card" id="clock">
-            <h1>Clock</h1>
-            <p id="clock-display">&nbsp;</p>
+            <span class="hide-show">Clock</span>
+            <div id="clock-content" class="content">
+                <h2>Clock</h2>
+                <p id="clock-display">&nbsp;</p>
+            </div>
         </div>
         <div class="card" id="reverse-string">
-            <h1>Reverse String</h1>
-            <p id="string-display">&nbsp;</p>
-            <input type="text" id="input-string" placeholder="Input text here">
-            <button type="button" id="reverse-button">Reverse</button>
+            <span class="hide-show">Reverse String</span>
+            <div id="reverse-string-content" class="content">
+                <h2>Reverse String</h2>
+                <p id="string-display">&nbsp;</p>
+                <input type="text" id="input-string" placeholder="Input text here">
+                <button type="button" id="reverse-button">Reverse</button>
+            </div>
         </div>
         <div class="card" id="countdown">
-            <h1>Countdown</h1>
-            <p id="countdown-display">&nbsp;</p>
-            <input type="date" id="input-date">
-            <button type="button" id="countdown-button">Start</button>
+            <span class="hide-show">Countdown</span>
+            <div id="countdown-content" class="content">
+                <h2>Countdown</h2>
+                <p id="countdown-display">&nbsp;</p>
+                <input type="date" id="input-date">
+                <button type="button" id="countdown-button">Start</button>
+            </div>
         </div>
         <div class="card" id="password-generator">
-            <h1>Password Generator</h1>
-            <p id="password-display">&nbsp;</p>
-            <button type="button" id="generate8-button">Generate 8</button>
-            <button type="button" id="generate16-button">Generate 16</button>
+            <span class="hide-show">Password Generator</span>
+            <div id="password-generator-content" class="content">
+                <h2>Password Generator</h2>
+                <p id="password-display">&nbsp;</p>
+                <button type="button" id="generate8-button">Generate 8</button>
+                <button type="button" id="generate16-button">Generate 16</button>
+            </div>
         </div>
         <div class="card" id="weather">
-            <h1>Current Weather</h1>
-            <p id="location"></p>
-            <p id="weather-display">&nbsp;</p>
-            <p id="weather-icon">&nbsp;</p>
-            <input type="text" id="input-location" placeholder="Enter city">
-            <button type="button" id="weather-button">Ok</button>
+            <span class="hide-show">Current Weather</span>
+            <div id="current-weather-content" class="content">
+                <h2>Current Weather</h2>
+                <p id="location"></p>
+                <p id="weather-display">&nbsp;</p>
+                <p id="weather-icon">&nbsp;</p>
+                <input type="text" id="input-location" placeholder="Enter city">
+                <button type="button" id="weather-button">Ok</button>
+            </div>
         </div>
         <div class="card" id="anime-waifu">
-            <h1>Anime Waifu</h1>
-            <div id="waifu-display"></div>
-            <p id="source"></p>
-            <button type="button" id="waifu-button">Get waifu</button>
+            <span class="hide-show">Anime Waifu</span>
+            <div id="waifu-content" class="content">
+                <h2>Anime Waifu</h2>
+                <div id="waifu-display"></div>
+                <p id="source"></p>
+                <button type="button" id="waifu-button">Get waifu</button>
+            </div>
         </div>
     </main>
     <script src="app.js" type="module"></script>
