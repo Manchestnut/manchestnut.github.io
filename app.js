@@ -8,6 +8,7 @@ import passwordGeneratorMain from './modules/password-generator.js'
 import weatherMain from './modules/weather.js'
 import getWaifuMain from './modules/waifu.js'
 import hideShowMain from './modules/hide-show.js'
+import dictionaryMain from './modules/dictionary.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   todoMain()
@@ -29,4 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
   getWaifuMain()
 
   hideShowMain()
+
+  dictionaryMain()
 })

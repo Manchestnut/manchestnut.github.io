@@ -9,6 +9,10 @@ body {
     max-width: fit-content;
     margin: auto auto;
     background-color: #6497b1;
+
+    /* avoid overflow */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 h1 {
     color: rgba(0, 0, 0, 0.8);
@@ -25,8 +29,14 @@ main .card {
     padding: 20px 1rem;
     margin: 20px auto;
     min-width: 300px;
+    width: 300px;
     max-width: 100%;
     background-color: #b3cde0;
+
+}
+main .card p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 main .card .content {
     display: none;
